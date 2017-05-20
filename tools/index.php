@@ -9,12 +9,17 @@ function listdir($dir){
 	}
 	return $dirstring;
 }
-echo '<h1>Account management tools:</h1><ul>';
+echo '<h1>Administrar tu cuenta:</h1><ul>';
 echo listdir("account");
-echo'</ul><h1>Upload related tools:</h1><ul>';
+echo'</ul><h1>Ayuda recien subida:</h1><ul>';
 echo listdir(".");
-echo "</ul><h1>The cron job (fixing CPs, autoban, etc.)</h1><ul>";
+echo "</ul><h1>The cron job (Repara CPs, autoban, etc.)</h1><ul>";
 echo "<li><a href='cron/cron.php'>cron.php</a></li>";
-echo "</ul><h1>Stats related tools</h1><ul>";
+echo "</ul><h1>Utilidad del Servidor</h1><ul>";
 echo listdir("stats");
+echo "</ul><h1>Reparar Nombres</h1><ul>";
+echo listdir("cleanup");
+echo "</ul><h1>Usuarios Baneados/ No Baneados</h1><ul>";
+echo listdir("Usuarios");
 ?>
+<body background="https://www.motionbackgroundsforfree.com/wp-content/uploads/2016/04/700-min.jpg" bgcolor="#999999">
